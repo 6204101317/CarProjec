@@ -1,9 +1,7 @@
 <template>
   <div class="home">
-    <b-col md="3">
-    </b-col>
     <div class="row">
-      <product
+      <product 
         v-for="(item, index) in Menuitem"
         :key="index"
         :NameProduct="item.NameProduct"
@@ -15,7 +13,7 @@
 
     <user :Total="Total" :Data="Data" />
     <table class="table">
-      <thead class="thead-dark">
+      <thead class="thead-yyy">
         <tr>
           <th scope="col">Product</th>
           <th scope="col">Price</th>
@@ -60,3 +58,14 @@ export default {
   }
 };
 </script>
+<style>
+.table .thead-yyy th {
+    color: rgb(0, 0, 0);
+    background-color: #e1fa00;
+    border-color: #000000;
+}
+.bg-black{
+  color: #000;
+}
+
+</style>

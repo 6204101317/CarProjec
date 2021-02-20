@@ -1,9 +1,9 @@
 <template>
   <div class="col-lg-3">
-    <b-card
-      border-variant="primary"
+    <b-card class="bg-ee"
+      border-variant="daek"
       :header="NameProduct"
-      header-bg-variant="dark"
+      header-bg-variant="qq"
       header-text-variant="white"
       align="center"
       style="height: 30rem"
@@ -12,11 +12,13 @@
           :src="img"
           alt="Image"
           tag="article"
-          style='height: 200px; width: 200px; object-fit: contain'
+          style="height: 200px; width: 200px; object-fit: contain"
           class="mb-2"
         ></b-card-img
       ></b-container>
-      <b-card-text><h3>Price : {{ Price }} usd</h3></b-card-text>
+      <b-card-text
+        ><h3>Price : {{ Price }} usd</h3></b-card-text
+      >
       <b-form-spinbutton
         id="sb-small"
         size="sm"
@@ -25,8 +27,8 @@
       ></b-form-spinbutton>
       <div>
         <button type="button" class="btn btn-outline-info" @click="Order()">
-         Add to cart
-      </button>
+          Add to cart
+        </button>
       </div>
     </b-card>
   </div>
@@ -58,12 +60,24 @@ export default {
 </script>
 <style>
 .btn-outline-info {
-    color: #0e530c;
-    border-color: #0e530c;
+  color: #fa007d;
+  border-color: #fa007d;
 }
 .btn-outline-info:hover {
-    color: #fff;
-    background-color: #0e530c;
-    border-color: #17a2b8;
+  color: #fff;
+  background-color:#fa007d;
+  border-color: #fa007d;
+}
+.bg-qq {
+  background-color: #d30777 !important;
+}
+.bg-ww {
+  background-color: #b8f50f !important;
+}
+.bg-bb {
+  background-color: #000000 !important;
+}
+.bg-ee {
+  background-color: #e1fa00 !important;
 }
 </style>

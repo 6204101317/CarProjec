@@ -4,7 +4,7 @@
       <div class="card-body">
         <div class="row justify-content-end">
           <h1 class="col-lg-4">Total : {{ Total }} usd</h1>
-          <button type="button " class="btn btn-success mr-4" @click="sum()">
+          <button type="button " class="btn btn-yyy mr-4" @click="sum()">
             <h1>BUY</h1>
           </button>
         </div>
@@ -25,13 +25,23 @@ export default {
       Tel: ""
     };
   },
-  methods: {}
+  methods: {
+    sum() {
+      alert(" Total : " + this.Total + " $usd");
+    }
+  }
 };
 </script>
 
 <style scoped>
 .bg-1 {
-  background-color: rgb(85, 85, 85);
-  color: rgb(255, 255, 255);
+  background-color: rgb(253, 0, 106);
+  color: rgb(7, 7, 7);
 }
+.btn-yyy {
+  color: rgb(0, 0, 0);
+  background-color: #e1fa00;
+  border-color: #e1fa00;
+}
+
 </style>

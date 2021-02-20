@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="ww">
    <navbar></navbar>
   </div>
 </template>
@@ -21,6 +21,9 @@ export default {
 #nav a {
   font-weight: bold;
   color: #e6e7e9;
+}
+.bg-ww {
+  background-color: #b8f50f !important;
 }
 
 </style>

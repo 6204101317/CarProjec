@@ -1,34 +1,32 @@
 <template>
-  <div id="app">
-    <b-navbar toggleable="lg" type="dark" variant="info">
+  <div id="app" class="bg-ww">
+    <b-navbar toggleable="lg" type="dark" variant="gg">
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item to="/"><h3>Produet</h3></b-nav-item>
+          <b-navbar-brand to="/"><h3>Produet</h3></b-navbar-brand>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-          <b-nav-form> </b-nav-form>
-
-          <b-nav-item to="/about"
+          <b-navbar-brand to="/about"
             ><b-icon icon="cart4" style="width: 35px; height: 35px"></b-icon
-          ></b-nav-item>
+          ></b-navbar-brand>
         </b-navbar-nav>
       </b-collapse>
       <div>
         <router-link to="/about">
           <button
             type="button "
-            class="btn btn-outline-success mr-1"
+            class="btn btn-outline-ee mr-1"
             @click="submit()"
           >
             Submit
           </button>
-          <button
+          <button 
             type="button"
-            class="btn btn-outline-danger"
+            class="btn btn-outline-gg"
             @click="cleardata()"
           >
             Clear
@@ -130,14 +128,25 @@ export default {
 
 <style>
 #nav a.router-link-exact-active {
-  color: #fdfafa;
+  color: #ffffff;
 }
-.bg-info {
-  background-color: #0d4736 !important;
+.bg-gg {
+  background-color: #000000 !important;
 }
 #nav a {
   font-weight: bold;
-  color: #e6e7e9;
+  color: #ffffff;
+}
+.bg-ww {
+    background-color: #b8f50f!important;
+}
+.btn-outline-ee {
+    color:  #e1fa00;
+    border-color: #e1fa00;
+}
+.btn-outline-gg {
+    color:  #fa007d;
+    border-color:  #fa007d;
 }
 
 </style>
