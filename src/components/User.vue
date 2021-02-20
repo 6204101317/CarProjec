@@ -25,20 +25,7 @@ export default {
       Tel: ""
     };
   },
-  methods: {
-    //ออกบิล
-    sum() {
-      alert(
-        "Name : " +
-          this.Name +
-          " Tel. : " +
-          this.Tel +
-          " Total : " +
-          this.Total +
-          " ฿"
-      );
-    }
-  }
+  methods: {}
 };
 </script>
 
