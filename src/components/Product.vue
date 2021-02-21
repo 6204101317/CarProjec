@@ -1,21 +1,20 @@
 <template>
   <div class="col-lg-3">
-    <b-card class="bg-ee"
+    <b-card
+      class="bg-ee"
       border-variant="daek"
       :header="NameProduct"
       header-bg-variant="qq"
       header-text-variant="white"
       align="center"
       style="height: 30rem"
-      >
-        <b-card-img
-          :src="img"
-          alt="Image"
-          
-          style="height: 200px; max-width; object-fit: contain"
-          class="mb-2"
-        ></b-card-img
-      >
+    >
+      <b-card-img
+        :src="img"
+        alt="Image"
+        style="height: 200px; max-width; object-fit: contain"
+        class="mb-2"
+      ></b-card-img>
       <b-card-text
         ><h3>Price : {{ Price }} usd</h3></b-card-text
       >
@@ -65,11 +64,11 @@ export default {
 }
 .btn-outline-info:hover {
   color: #fff;
-  background-color:#fa007d;
+  background-color: #fa007d;
   border-color: #fa007d;
 }
 .bg-qq {
-  background-color:  #fa007d !important;
+  background-color: #fa007d !important;
 }
 .bg-ww {
   background-color: #181717 !important;

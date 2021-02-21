@@ -43,5 +43,4 @@ export default {
   background-color: #e1fa00;
   border-color: #e1fa00;
 }
-
 </style>

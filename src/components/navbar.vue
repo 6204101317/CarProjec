@@ -24,11 +24,7 @@
           >
             Submit
           </button>
-          <button 
-            type="button"
-            class="btn btn-outline-gg"
-            @click="cleardata()"
-          >
+          <button type="button" class="btn btn-outline-gg" @click="cleardata()">
             Clear
           </button>
         </router-link>
@@ -46,7 +42,7 @@
 </template>
 <script>
 export default {
-  name:"navber",
+  name: "navber",
   data() {
     return {
       Total: 0,
@@ -139,15 +135,14 @@ export default {
   color: #ffffff;
 }
 .bg-ww {
-    background-color: #b8f50f!important;
+  background-color: #b8f50f !important;
 }
 .btn-outline-ee {
-    color:  #e1fa00;
-    border-color: #e1fa00;
+  color: #e1fa00;
+  border-color: #e1fa00;
 }
 .btn-outline-gg {
-    color:  #fa007d;
-    border-color:  #fa007d;
+  color: #fa007d;
+  border-color: #fa007d;
 }
-
 </style>

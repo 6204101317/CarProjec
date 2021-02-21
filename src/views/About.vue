@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <div class="row">
-      <product 
+      <product
         v-for="(car, index) in Menuitem"
         :key="index"
         :NameProduct="car.NameProduct"
@@ -60,12 +60,11 @@ export default {
 </script>
 <style>
 .table .thead-yyy th {
-    color: rgb(0, 0, 0);
-    background-color: #e1fa00;
-    border-color: #000000;
+  color: rgb(0, 0, 0);
+  background-color: #e1fa00;
+  border-color: #000000;
 }
-.bg-black{
+.bg-black {
   color: #000;
 }
-
 </style>

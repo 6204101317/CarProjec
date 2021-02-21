@@ -1,5 +1,5 @@
 <template>
-  <div class="home"> 
+  <div class="home">
     <b-container>
       <b-row align-v="center">
         <div class="row">
@@ -18,7 +18,7 @@
 <script>
 import Product from "@/components/Product.vue";
 export default {
-  name:"home",
+  name: "home",
   components: { Product },
   props: {
     Menuitem: Array
