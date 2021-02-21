@@ -1,14 +1,13 @@
 <template>
   <div id="app" class="ww">
-   <navbar></navbar>
+    <navbar></navbar>
   </div>
 </template>
 <script>
-import navbar from '@/components/navbar.vue';
+import navbar from "@/components/navbar.vue";
 export default {
-  name:"app",
-  components: { navbar },
- 
+  name: "app",
+  components: { navbar }
 };
 </script>
 
@@ -26,5 +25,4 @@ export default {
 .bg-ww {
   background-color: #b8f50f !important;
 }
-
 </style>
