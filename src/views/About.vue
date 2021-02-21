@@ -21,7 +21,7 @@
           <th scope="col">Total</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="text-white">
         <tr v-for="(da, index) in Data" :key="index">
           <td>{{ da.NameProduct }}</td>
           <td>{{ da.Price }}</td>

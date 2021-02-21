@@ -30,7 +30,7 @@
         </router-link>
       </div>
     </b-navbar>
-    <router-view
+    <router-view 
       :Total="Total"
       :User="User"
       :Menuitem="Menuitem"
