@@ -7,21 +7,21 @@
       header-text-variant="white"
       align="center"
       style="height: 30rem"
-      ><b-container>
+      >
         <b-card-img
           :src="img"
           alt="Image"
-          tag="article"
-          style="height: 200px; width: 200px; object-fit: contain"
+          
+          style="height: 200px; max-width; object-fit: contain"
           class="mb-2"
         ></b-card-img
-      ></b-container>
+      >
       <b-card-text
         ><h3>Price : {{ Price }} usd</h3></b-card-text
       >
       <b-form-spinbutton
         id="sb-small"
-        size="sm"
+        size="lg"
         v-model="Amount"
         class="mb-5"
       ></b-form-spinbutton>
@@ -69,10 +69,10 @@ export default {
   border-color: #fa007d;
 }
 .bg-qq {
-  background-color: #d30777 !important;
+  background-color:  #fa007d !important;
 }
 .bg-ww {
-  background-color: #b8f50f !important;
+  background-color: #181717 !important;
 }
 .bg-bb {
   background-color: #000000 !important;

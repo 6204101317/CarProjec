@@ -1,14 +1,14 @@
 <template>
-  <div class="about"> 
+  <div class="home"> 
     <b-container>
       <b-row align-v="center">
         <div class="row">
           <product
-            v-for="(item, index) in Menuitem"
+            v-for="(car, index) in Menuitem"
             :key="index"
-            :NameProduct="item.NameProduct"
-            :img="item.img"
-            :Price="item.Price"
+            :NameProduct="car.NameProduct"
+            :img="car.img"
+            :Price="car.Price"
             @Order="menuorder"
           /></div></b-row
     ></b-container>
@@ -16,8 +16,9 @@
   </div>
 </template>
 <script>
-import Product from "../components/Product.vue";
+import Product from "@/components/Product.vue";
 export default {
+  name:"home",
   components: { Product },
   props: {
     Menuitem: Array

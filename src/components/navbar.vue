@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="bg-ww">
+  <div id="navbar" class="bg-ww">
     <b-navbar toggleable="lg" type="dark" variant="gg">
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -46,6 +46,7 @@
 </template>
 <script>
 export default {
+  name:"navber",
   data() {
     return {
       Total: 0,

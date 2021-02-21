@@ -1,12 +1,12 @@
 <template>
-  <div class="home">
+  <div class="about">
     <div class="row">
       <product 
-        v-for="(item, index) in Menuitem"
+        v-for="(car, index) in Menuitem"
         :key="index"
-        :NameProduct="item.NameProduct"
-        :img="item.img"
-        :Price="item.Price"
+        :NameProduct="car.NameProduct"
+        :img="car.img"
+        :Price="car.Price"
         @Order="menuorder"
       />
     </div>
@@ -22,11 +22,11 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(mi, index) in Data" :key="index">
-          <td>{{ mi.NameProduct }}</td>
-          <td>{{ mi.Price }}</td>
-          <td>{{ mi.Amount }}</td>
-          <td>{{ mi.Total }}</td>
+        <tr v-for="(da, index) in Data" :key="index">
+          <td>{{ da.NameProduct }}</td>
+          <td>{{ da.Price }}</td>
+          <td>{{ da.Amount }}</td>
+          <td>{{ da.Total }}</td>
         </tr>
       </tbody>
     </table>
@@ -38,7 +38,7 @@
 import User from "../components/User.vue";
 
 export default {
-  name: "Home",
+  name: "About",
   components: {
     User
   },
