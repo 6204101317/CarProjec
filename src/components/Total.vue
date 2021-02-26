@@ -19,12 +19,6 @@ export default {
     Total: Number,
     Data: Array
   },
-  data() {
-    return {
-      Name: "",
-      Tel: ""
-    };
-  },
   methods: {
     sum() {
       alert(" Total : " + this.Total + " $usd");

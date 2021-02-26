@@ -3,7 +3,7 @@
     <b-container>
       <b-row align-v="center">
         <div class="row">
-          <product
+          <card
             v-for="(car, index) in Menuitem"
             :key="index"
             :NameProduct="car.NameProduct"
@@ -16,10 +16,10 @@
   </div>
 </template>
 <script>
-import Product from "@/components/Product.vue";
+import Card from "@/components/Card.vue";
 export default {
   name: "home",
-  components: { Product },
+  components: { Card },
   props: {
     Menuitem: Array
   },

@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <div class="row">
-      <product
+      <card
         v-for="(car, index) in Menuitem"
         :key="index"
         :NameProduct="car.NameProduct"
@@ -11,22 +11,24 @@
       />
     </div>
 
-    <user :Total="Total" :Data="Data" />
+    <total :Total="Total" :Data="Data" />
     <table class="table">
       <thead class="thead-yyy">
         <tr>
+          <th scope="col">img</th>
           <th scope="col">Product</th>
           <th scope="col">Price</th>
-          <th scope="col">Piece</th>
+          <th scope="col">Unit</th>
           <th scope="col">Total</th>
         </tr>
       </thead>
       <tbody class="text-white">
-        <tr v-for="(da, index) in Data" :key="index">
-          <td>{{ da.NameProduct }}</td>
-          <td>{{ da.Price }}</td>
-          <td>{{ da.Amount }}</td>
-          <td>{{ da.Total }}</td>
+        <tr v-for="(ca, index) in Data" :key="index">
+          <td>{{ ca.img }}</td>
+          <td>{{ ca.NameProduct }}</td>
+          <td>{{ ca.Price }}</td>
+          <td>{{ ca.Amount }}</td>
+          <td>{{ ca.Total }}</td>
         </tr>
       </tbody>
     </table>
@@ -35,17 +37,17 @@
 
 <script>
 // @ is an alias to /src
-import User from "../components/User.vue";
+import Total from "../components/Total.vue";
 
 export default {
   name: "About",
   components: {
-    User
+    Total
   },
   props: {
     Total: Number,
     Data: Array,
-    Menuitem: Array
+    Menuitem: Array,
   },
   data() {
     return {};

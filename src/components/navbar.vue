@@ -5,7 +5,7 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-navbar-brand to="/"><h3>Produet</h3></b-navbar-brand>
+          <b-navbar-brand to="/"><h3>Product</h3></b-navbar-brand>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
@@ -32,7 +32,6 @@
     </b-navbar>
     <router-view 
       :Total="Total"
-      :User="User"
       :Menuitem="Menuitem"
       :Data="Data"
       @Order="menuorder"
